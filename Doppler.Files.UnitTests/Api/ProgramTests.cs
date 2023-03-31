@@ -21,7 +21,7 @@
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             Assert.Equal("text/html; charset=utf-8", response.Content?.Headers?.ContentType?.ToString());
             Assert.Equal(1, swagger.Components.SecuritySchemes.Count);
-            Assert.Equal("Bearer",swagger.Components.SecuritySchemes.Keys.Single());
+            Assert.Equal("Bearer", swagger.Components.SecuritySchemes.Keys.Single());
         }
     }
 }
