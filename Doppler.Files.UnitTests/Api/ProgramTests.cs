@@ -24,6 +24,7 @@
             Assert.Equal(expectedStatusCode, response.StatusCode);
             Assert.Equal(expectedContentType, response.Content?.Headers?.ContentType?.ToString());
         }
+
         [Fact]
         public void Swagger_ShouldHaveCorrectSecuritySchema()
         {
